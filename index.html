@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Adventure</title>
+</head>
+<body>
+    <h1 class="top-txt">Adventure</h1>
+    <div class="wrapper">
+        <!-- sceneSelector -->
+        <div class="col">
+            <div class="sceneSelector" id="sceneSelector">
+                <div class="lvlSelectorButton" id="lvlBtn1" onclick="hideBackgroundItems()">Level 1</div>
+                <div class="lvlSelectorButton" id="lvlBtn2" onclick="hideBackgroundItems()">Level 2</div>
+                <div class="lvlSelectorButton" id="lvlBtn3" onclick="hideBackgroundItems()">Level 3</div>
+                <div class="lvlSelectorButton" id="lvlBtn4" onclick="hideBackgroundItems()">Level 4</div>
+                <div class="lvlSelectorButton" id="lvlBtn5" onclick="hideBackgroundItems()">Level 5</div>
+                <div class="lvlSelectorButton" id="lvlBtn6" onclick="hideBackgroundItems()">Level 6</div>
+                <div class="lvlSelectorButton" id="lvlBtn7" onclick="hideBackgroundItems()">Level 7</div>
+                <div class="lvlSelectorButton" id="lvlBtn8" onclick="hideBackgroundItems()">Level 8</div>
+                <div class="lvlSelectorButton" id="lvlBtn9" onclick="hideBackgroundItems()">Level 9</div>
+                <div class="lvlSelectorButton" id="lvlBtn10" onclick="hideBackgroundItems()">Level 10</div>
+            </div>
+        </div>
+        <!-- gameBoard  -->
+        <div class="col">
+            <!-- file:///C:/Users/Ernest/Downloads/mountain.jpg -->
+            <div class="gameBoard" id="gameBoard">
+                <img src="file:///C:/Users/Ernest/Desktop/lesson/my_stuff/adventure-game/Media/adventureLvl1.gif" alt="placeholder image" class="mainBG" id="mainBG">
+                <div class="start" id="start" onclick="hideBackgroundItems()">Start</div>
+                <div class="help" id="help">Help</div>
+            </div>
+        </div>
+        <!-- battleForecast -->
+        <div class="col">
+            <!-- attack, shield, heal blocks go here when you press start -->
+            <div class="battleForecast" id="battleForecast" style="visibility: hidden;"></div>
+            <!-- healthBar appears when user clicks start -->
+                <div class="healthBar" id="healthBar" style="visibility: hidden;">
+                    <h2 class="healthBarTxt">Health</h2>
+                </div>
+        </div>
+    </div>
+    <!-- stickManDancing-gif -->
+    <img src="file:///C:/Users/Ernest/Desktop/lesson/homework/adventure-game/Media/stick%20man%20dancing.gif" alt="A gif of a stick man dancing" class="stickManDancing" id="stickManDancing">
+<!-- instructions
+    Demonstrate all basic JavaScript
+        Variables - Data types
+        Arrays, Objects
+        Conditionals
+        Loops
+        Functions
+        DOM
+        Events
+        Data models - ie options, player, monsters, events///////////////
+        Min 10 scenes
+        Go forward and backward to scenes
+        Must use increment and decrement, as well as use mathematical operators
+        Must take user events to decide direction of game - inputs, click, keypress,etc
+    Must include supporting graphics - HTML, CSS
+    Must have instructor approval
+-->
+    <script src="app.js"></script>
+</body>
+</html>

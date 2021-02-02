@@ -1,0 +1,239 @@
+/* ======================================================== \\  Adventure // ================================================================ */
+* { box-sizing: border-box; }
+:root {
+    --cloudysky: rgb(71, 71, 71);
+    --clearsky:  rgb(0, 191, 255);
+    --land: green;
+    --snowland: white;
+    --road: tan;
+    --bridge: lightgray;
+}
+
+body {
+    background: black;
+    color: darkgoldenrod;
+}
+
+.top-txt { text-align: center; }
+/* gameBoard */
+#gameBoard {
+    width: 700px;
+    height: 500px;
+    margin-left: 110px;
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurellevel1.gif);
+    border-top: 2px solid darkgoldenrod;
+    border-bottom: 2px solid darkgoldenrod;
+    border-right: 2px solid darkgoldenrod;
+}
+/* the start screen image */
+.mainBG { position: absolute; border-image-width: 15px 40px; }
+
+/* stickManDancing is the green thing on the far right */
+.stickManDancing{
+    margin-left: 959px;
+    margin-top: -800px;
+}
+/* start button */
+.start {
+    background-color: black;
+    border: 2px solid darkgoldenrod;
+    text-align: center;
+    margin-top: 350px;
+    margin-left: 200px;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+}
+/* help button */
+.help {
+    background-color: black;
+    border: 2px solid darkgoldenrod;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 400px;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+/*  block on the far left */
+/* Scene selector style */
+#sceneSelector {
+    height: 500px;
+    width:110px;
+    border: 2px solid darkgoldenrod;
+    background-color: black;
+    position: absolute;
+}
+/* buttons inside the block on the far left */
+/* levelSelectorButton */
+.lvlSelectorButton {
+    background-color: darkred;
+    border: 1px solid darkgoldenrod;
+    width: 95px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 20.7px;
+    padding: 5px;
+}
+
+/* level 1 */
+.level1_0 {
+    background-color: var(--land);
+    margin-top: -380px;
+    width: 698px;
+    height: 496px;
+}
+.level1_1 {
+    background-color: var(--clearsky);
+    margin-top: -496px;
+    width: 698px;
+    height: 300px;
+    border-bottom: 2px solid #000;
+}
+.level1_2 {
+    background: orange;
+    width: 70px;
+    height: 70px;
+    margin-left: 626px;
+    margin-top: -298px;
+    border-radius: 50px;
+}
+
+.level_img_1_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/my_stuff/adventure-game/Media/adventureLvl1.gif);
+    width: 698px;
+    height: 300px;
+}
+
+.level_img_2_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel2.gif);
+    width: 698px;
+    height: 300px;
+}
+.level_img_3_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel3.gif);
+    width: 698px;
+    height: 300px;
+}
+.level_img_4_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel4.gif);
+    width: 698px;
+    height: 300px;
+}
+/*  */
+.level_img_5_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel5.gif);
+    width: 698px;
+    height: 300px;
+}
+.level_img_6_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel6.gif);
+    width: 698px;
+    height: 300px;
+}
+
+.level_img_7_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel7.gif);
+    width: 698px;
+    height: 300px;
+}
+
+.level_img_8_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel8.gif);
+    width: 698px;
+    height: 300px;
+}
+
+.level_img_9_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel9.gif);
+    width: 698px;
+    height: 300px;
+}
+
+.level_img_10_ {
+    background: url(file:///C:/Users/Ernest/Desktop/lesson/media/adventurelevel10.gif);
+    width: 698px;
+    height: 300px;
+}
+
+/* still working here */
+/* level 2 */
+.level2_ {
+    width: 698px;
+    height: 96px;
+    margin-left: 100px;
+}
+.level2_0 {
+    background-color: var(--land);
+    margin-top: -380px;
+    width: 698px;
+    height: 496px;
+}
+.level2_1 {
+    background-color: var(--clearsky);
+    margin-top: -496px;
+    width: 698px;
+    height: 300px;
+    border-bottom: 2px solid #000;
+}
+.level2_2 {
+    background: blue;
+    width: 70px;
+    height: 70px;
+    margin-left: 626px;
+    margin-top: -298px;
+    border-radius: 50px;
+}
+
+/* battleForecast */
+.battleForecast {
+    background: black;
+    border: 2px solid darkgoldenrod;
+    color:black;
+    width: 150px;
+    height: 500px;
+    margin-top: -500px;
+    margin-left: 808px;
+}
+
+.attackBtn, .healBtn, .shieldBtn, .soldier {
+    border: 2px solid darkgoldenrod;
+    width: 146px;
+    height: 124px;
+}
+.attackBtn { background: red; }
+.healBtn { background: lightgreen; }
+.shieldBtn { background: blue; }
+.soldier { background: grey; }
+
+/* healthBar */
+.healthBar {
+    background: white;
+    border: 2px solid darkgoldenrod;
+    width:700px;
+    height:50px;
+    margin-left: 109px;
+}
+.healthBarTxt {
+    color: darkgoldenrod;
+    margin-left: 705px;
+}
+.healthBarBlock {
+    background: white;
+    width: 230px;
+    height: 46px;
+    position: absolute;
+}
+
+
+/* does not work at the moment */
+/* gameOverBlock */
+.gameOverBlock {
+    background: solid black;
+    width: 9999px;
+    height: 9999px;
+}
+/* hides the previous level */
+.hide { display: none; }
